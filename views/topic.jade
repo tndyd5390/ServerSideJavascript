@@ -1,0 +1,14 @@
+html
+    head
+        metd(charset='utf-8')
+    body
+        h1  
+            a(href="/topic") Server Side JavaScript
+        ul 
+            each topic in topics
+                li
+                    a(href="/topic/" + topic)= topic
+        article
+            h2= title
+            =description
+        a(href="/regTopic")등록
